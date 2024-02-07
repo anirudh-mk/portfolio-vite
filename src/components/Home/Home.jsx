@@ -13,7 +13,7 @@ import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 
 function Home() {
   return (
-    <div className="home grid grid-row-2 gap-[30px]">
+    <div className="home grid grid-row-2 gap-[30px] pb-[80px]">
       <div className="flex justify-center pt-[30px]">
         <ProfileImage
           image={AnirudhImage}
