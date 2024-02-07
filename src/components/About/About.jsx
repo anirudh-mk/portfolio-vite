@@ -16,7 +16,7 @@ function About() {
           />
         </div>
         <div className="py-[20px]">
-          <p className="text-white text-[18px] font-semibold px-[40px]">
+          <p className="text-white text-[18px] font-semibold px-[40px] text-center">
             Hey, I'm Anirudh MK, a backend web developer at G-tech Mulearn,
             immersed in Django and Python. Pursuing a degree in Electronics and
             Communication Engineering, I'm passionate about app and web
