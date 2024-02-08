@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
+import ProjectDetailsCard from "../ProjectDetailsCard/ProjectDetailsCard";
 
 function Projects() {
   const [data, setData] = useState([]);
@@ -19,13 +20,13 @@ function Projects() {
         console.log(error);
       })
       .finally(function () {});
-  });
+  }, []);
   return (
     <div className="py-[20px]">
       <h1 className="text-[22px] font-bold pl-[20px]">Projects</h1>
       <ul>
         {data.map((project) => (
-          <p key={project.id}>{project.name}</p>
+          <ProjectDetailsCard key={project.id} data={project} />
         ))}
       </ul>
     </div>
