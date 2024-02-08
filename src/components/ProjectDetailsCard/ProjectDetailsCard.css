@@ -1,0 +1,9 @@
+.overflow-text {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.project-details-card:hover {
+    transform: scale(1.02);
+}
