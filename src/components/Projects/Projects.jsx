@@ -5,19 +5,17 @@ import "./Projects.css";
 
 function Projects() {
   const [data, setData] = useState([]);
-  const [displayedProjects, setDisplayedProjects] = useState([]);
+  const [displayedProjects, setDisplayedProjects] = useState(data.slice(0, 2));
   const [showAll, setShowAll] = useState(false);
-
   useEffect(() => {
     axios
-      .get("https://api.github.com/users/anirudh-mk/repos", {
+      .get(`https://api.github.com/users/anirudh-mk/repos`, {
         headers: {
           Authorization: `Bearer ${import.meta.env.VITE_GITHUB}`,
         },
       })
       .then(function (response) {
         setData(response.data);
-        setDisplayedProjects(data.slice(0, 2));
       })
       .catch(function (error) {
         console.log(error);
@@ -25,8 +23,12 @@ function Projects() {
       .finally(function () {});
   }, []);
 
+  useEffect(() => {
+    setDisplayedProjects(data.slice(0, 2));
+  }, [data]);
+
   const handleToggleDisplay = () => {
-    if (!showAll) {
+    if (showAll) {
       setDisplayedProjects(data.slice(0, 2));
     } else {
       setDisplayedProjects(data);
