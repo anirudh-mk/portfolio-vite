@@ -17,6 +17,7 @@ function Projects() {
       })
       .then(function (response) {
         setData(response.data);
+        setDisplayedProjects(data.slice(0, 2));
       })
       .catch(function (error) {
         console.log(error);
