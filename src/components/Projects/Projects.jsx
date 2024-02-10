@@ -17,12 +17,15 @@ function Projects() {
       })
       .then(function (response) {
         setData(response.data);
-        setDisplayedProjects(data.slice(0, 2));
       })
       .catch(function (error) {
         console.log(error);
       })
       .finally(function () {});
+  }, []);
+
+  useEffect(() => {
+    setDisplayedProjects(data.slice(0, 2));
   }, []);
 
   const handleToggleDisplay = () => {
