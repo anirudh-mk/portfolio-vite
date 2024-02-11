@@ -37,7 +37,7 @@ function Projects() {
   };
 
   return (
-    <div className="py-[20px]">
+    <div className="py-[20px] xl:w-[1192px] xl:mx-auto">
       <h1 className="text-[22px] font-bold pl-[20px] pb-[20px]">Projects</h1>
       <ul>
         {displayedProjects.map((project) => (

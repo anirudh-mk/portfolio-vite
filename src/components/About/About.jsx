@@ -4,9 +4,9 @@ import AnirudhImage from "../../assets/images/anirudh.png";
 
 function About() {
   return (
-    <div className="bg-[#6E6F64] pt-[28px] pb-[80px]">
+    <div className="bg-[#6E6F64] pt-[28px] pb-[80px] lg:w-[1192px] lg:mx-auto">
       <h1 className="text-[22px] font-bold text-white pl-[20px]">About</h1>
-      <div className="grid grid-row-2">
+      <div className="grid grid-row-2 md:grid-cols-[170px_auto] md:px-[120px]">
         <div className="flex justify-center py-[20px]">
           <ProfileImage
             image={AnirudhImage}
@@ -16,7 +16,7 @@ function About() {
           />
         </div>
         <div className="py-[20px]">
-          <p className="text-white text-[18px] font-semibold px-[40px] text-center">
+          <p className="text-white text-[18px] font-semibold px-[40px] text-center md:text-left ">
             Hey, I'm Anirudh MK, a backend web developer at G-tech Mulearn,
             immersed in Django and Python. Pursuing a degree in Electronics and
             Communication Engineering, I'm passionate about app and web
