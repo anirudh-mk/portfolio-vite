@@ -8,6 +8,7 @@ import Projects from "./components/Projects/Projects";
 function App() {
   return (
     <>
+      <Navbar />
       <Home />
       <About />
       <Projects />
