@@ -1,4 +1,5 @@
-.image {
+.navbar {
+    max-width: 1217px;
     background-image: url(../assets/images/mountain.png);
     padding: 40px 20px;
     margin: 50px 300px;
@@ -6,7 +7,7 @@
     justify-content: space-between;
 }
 
-.image h1 {
+.navbar h1 {
     font-size: 22px;
     color: white;
     font-weight: 500;

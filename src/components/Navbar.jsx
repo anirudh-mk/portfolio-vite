@@ -3,7 +3,7 @@ import style from "../styles/navbar.module.css";
 
 function Navbar() {
   return (
-    <div id="navbar" className={style.image}>
+    <div id="navbar" className={style.navbar}>
       <a href="navbar">
         <h1>Anirudh MK</h1>
       </a>

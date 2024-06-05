@@ -1,0 +1,32 @@
+.about {
+    max-width: 1217px;
+    padding: 24px;
+    margin: 0px 300px;
+    background-color: #6E6F64;
+}
+
+.headding {
+    font-size: 22px;
+    color: white;
+}
+
+.container {
+    display: flex;
+    gap: 50px;
+    padding: 80px 150px;
+}
+
+.image img {
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+}
+
+.description {
+    width: 80%;
+}
+
+.description p,
+i {
+    color: white;
+}
